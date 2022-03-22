@@ -1,0 +1,10 @@
+[[tool.docker.env_vars]]
+name = "foo"
+value = "\"$FOO\""
+
+[tool.pytest.ini_options]
+testpaths = "src/tests"
+addopts = "--cov=src"
+
+[tool.coverage.run]
+omit = ["src/tests/*"]
